@@ -8,7 +8,6 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <div className="App">
-      Hello
       <Nav />
       <Hero />
       <Form />
