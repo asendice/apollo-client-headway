@@ -6,7 +6,6 @@ function Links() {
   if (error) return <p> Erorr... </p>;
   const copyOfLinks = [...data.allLinks];
   const sortedLinks = copyOfLinks.sort((a, b) => b.id - a.id);
-  console.log(data.allLinks);
   return (
     <div>
       {sortedLinks.map(({ url, slug, id }) => {
