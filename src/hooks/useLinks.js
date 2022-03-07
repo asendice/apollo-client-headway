@@ -1,6 +1,6 @@
 import { useQuery, gql } from "@apollo/client";
 
-const GET_LINKS = gql`
+export const GET_LINKS = gql`
   query {
     allLinks {
       url

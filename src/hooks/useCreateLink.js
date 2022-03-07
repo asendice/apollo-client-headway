@@ -1,4 +1,5 @@
 import { gql, useMutation } from "@apollo/client";
+import { GET_LINKS } from "./useLinks";
 
 const ADD_LINK = gql`
   mutation createLink($url: String!, $slug: String) {
@@ -10,7 +11,9 @@ const ADD_LINK = gql`
 `;
 
 export const useCreateLink = () => {
-  const [createLink, { data }] = useMutation(ADD_LINK);
+  const [createLink, { data }] = useMutation(ADD_LINK, {
+    refetchQueries: [GET_LINKS]
+  });
   return {
     createLink,
     data
