@@ -15,7 +15,7 @@ function Form() {
   }
 
   return (
-    <div className="bg-sky-900 py-12">
+    <div className="bg-slate-800 py-12">
       <form
         className="flex px-5 md:flex-row gap-4 justify-center flex-col"
         onSubmit={(e) => handleSubmit(e)}
