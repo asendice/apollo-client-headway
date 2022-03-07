@@ -1,6 +1,5 @@
 function Footer() {
   return (
-    // <ul className="flex flex-col bg-gray-700 justify-start text-white md:flex-row md:justify-between px-10 py-20 ">
     <ul className="flex flex-col content-start bg-zinc-600 px-10 py-12 text-white content-start md:flex-row">
       <li className="text-left md:ml-10">
         {" "}
