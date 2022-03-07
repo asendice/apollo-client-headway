@@ -1,16 +1,6 @@
-import { useQuery, gql } from "@apollo/client";
-
-const GET_LINKS = gql`
-  query {
-    allLinks {
-      url
-      slug
-    }
-  }
-`;
-
+import { useLinks } from "./hooks/useLinks";
 function Links() {
-  const { loading, error, data } = useQuery(GET_LINKS);
+  const { data, loading, error } = useLinks();
 
   if (loading) return <p> loading... </p>;
   if (error) return <p> Erorr... </p>;
