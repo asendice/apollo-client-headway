@@ -39,7 +39,14 @@ function Form() {
       </form>
       <p className="text-white mt-5">
         By clicking shorten, you agree to Rebrandly's{" "}
-        <a href="">Term of Use </a> and <a href="#"> Privacy Policy </a>
+        <a className="underline" href="">
+          Term of Use{" "}
+        </a>{" "}
+        and{" "}
+        <a className="underline" href="#">
+          {" "}
+          Privacy Policy{" "}
+        </a>
       </p>
     </div>
   );

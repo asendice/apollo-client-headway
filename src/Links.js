@@ -12,7 +12,13 @@ function Links() {
         const shortURL = `https://hdwy.link/${slug}`;
         return (
           <div key={id}>
-            <a href="#">{url} </a> ---&gt; <a href="#">{shortURL}</a>
+            <a className="underline" href="#">
+              {url}{" "}
+            </a>{" "}
+            ---&gt;{" "}
+            <a className="underline" href="#">
+              {shortURL}
+            </a>
           </div>
         );
       })}
