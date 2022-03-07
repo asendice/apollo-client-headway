@@ -12,7 +12,7 @@ export default function App() {
       <Nav />
       <Hero />
       <Form />
-      {/* <Links /> */}
+      <Links />
       <Footer />
     </div>
   );
