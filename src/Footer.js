@@ -1,10 +1,10 @@
 function Footer() {
   return (
-    <ul>
-      <li>Terms & Conditions</li>
-      <li>Privacy Policy</li>
-      <li>Cookie Policy</li>
-      <li>Rebrandly &copy; Copyright 2020</li>
+    <ul className="flex flex-row px-10">
+      <li className="ml-10">Terms & Conditions</li>
+      <li className="ml-10">Privacy Policy</li>
+      <li className="ml-10">Cookie Policy</li>
+      <li className="ml-auto">Rebrandly &copy; Copyright 2020</li>
     </ul>
   );
 }
