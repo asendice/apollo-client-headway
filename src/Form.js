@@ -15,13 +15,29 @@ function Form() {
   }
 
   return (
-    <div>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <input ref={urlRef} placeholder="Make your links shorter" />
-        <input ref={slugRef} placeholder="Custom slug" />
-        <button type="submit">Shorten URL</button>
+    <div className="bg-sky-900 py-12">
+      <form
+        className="flex px-5 md:flex-row gap-4 justify-center flex-col"
+        onSubmit={(e) => handleSubmit(e)}
+      >
+        <input
+          className="px-6 py-2 rounded md:w-64"
+          ref={urlRef}
+          placeholder="Make your links shorter"
+        />
+        <input
+          className="px-6 py-2 rounded "
+          ref={slugRef}
+          placeholder="Custom slug"
+        />
+        <button
+          className=" py-2 rounded px-6 text-white bg-cyan-600 md:w-64"
+          type="submit"
+        >
+          Shorten URL
+        </button>
       </form>
-      <p>
+      <p className="text-white mt-5">
         By clicking shorten, you agree to Rebrandly's{" "}
         <a href="">Term of Use </a> and <a href="#"> Privacy Policy </a>
       </p>
