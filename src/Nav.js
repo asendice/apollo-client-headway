@@ -13,10 +13,10 @@ function Nav() {
       <li className="ml-auto hidden lg:inline-block">
         <p>Login </p>
       </li>
-      <div class="space-y-1 ml-auto lg:hidden ">
-        <div class="w-6 h-1 rounded bg-cyan-600"></div>
-        <div class="w-6 h-1 rounded bg-cyan-600"></div>
-        <div class="w-6 h-1 rounded bg-cyan-600"></div>
+      <div className="space-y-1 ml-auto lg:hidden ">
+        <div className="w-6 h-1 rounded bg-cyan-600"></div>
+        <div className="w-6 h-1 rounded bg-cyan-600"></div>
+        <div className="w-6 h-1 rounded bg-cyan-600"></div>
       </div>
     </ul>
   );
